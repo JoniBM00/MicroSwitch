@@ -1,0 +1,23 @@
+server:
+  port: 8100
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: CatalogoSwitch
+          uri: lb://CATALOGOSWITCH #NOMBRE DEL MICRO DE CATALOGO EN EL EUREKA
+          predicates:
+          - Path=/catalogo/getAll
+        - id: TarifaSwitch
+          uri: lb://tarifaSwitch #NOMBRE DEL MICRO DE CATALOGO EN EL EUREKA
+          predicates:
+          - Path=/tarifa/getAll
+  application:
+    name: apiGateway
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

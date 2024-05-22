@@ -1,0 +1,14 @@
+com.viewnext.apigateway
+com.viewnext.catalogoSwitch
+com.viewnext.catalogoSwitch.business
+com.viewnext.catalogoSwitch.business.ServiceImpl
+com.viewnext.catalogoSwitch.presentation
+com.viewnext.catalogoSwitch.repository
+com.viewnext.catalogoSwitch.repository.model
+com.viewnext.Eureka
+com.viewnext.tarifaSwitch
+com.viewnext.tarifaSwitch.business
+com.viewnext.tarifaSwitch.business.ServiceImpl
+com.viewnext.tarifaSwitch.presentation
+com.viewnext.tarifaSwitch.repository
+com.viewnext.tarifaSwitch.repository.model
